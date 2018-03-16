@@ -82,7 +82,7 @@ public class WriteVariants {
                                             panelAppResults.put(vepAnnotationObject.getSymbol(), PanelAppRestClient.searchByGene(vepAnnotationObject.getSymbol()).getResults());
                                         } catch (IOException e){
                                             LOGGER.severe("Could not connect to PanelApp: " + e.getMessage());
-                                            throw e;
+                                            //throw e;
                                         }
                                     }
 
